@@ -1,0 +1,201 @@
+:root {
+  /* background */
+  --c-dark: #141D2D;
+  --c-light: #fff;
+  --c-accent: #FF6B08;
+
+  /* text */
+  --txt-c-dark: var(--c-dark);
+  --txt-c-grey: #4F5B70;
+  --txt-c-accent: var(--c-accent);
+  --txt-c-light: var(--c-light);
+
+  /* font */
+  --font-main: 'Acrom', sans-serif;
+
+  /* breakpoint */
+  --vertical-scroll: 20px;
+  --mobile: calc(320px + var(--vertical-scroll));
+  --tablet: calc(640px + var(--vertical-scroll));
+  --desktop: calc(1168px + var(--vertical-scroll));
+
+}
+
+@font-face {
+  font-family: "Acrom";
+  src: url("../fonts/acrom/Acrom-ExtraBold.eot");
+  src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"),
+    url("../fonts/acrom/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acrom/Acrom-ExtraBold.woff") format("woff"),
+    url("../fonts/acrom/Acrom-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Acrom';
+	src: url('../fonts/acrom/Acrom-Bold.eot');
+	src: local('Acrom Bold'), local('Acrom-Bold'),
+		url('../fonts/acrom/Acrom-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/acrom/Acrom-Bold.woff') format('woff'),
+		url('../fonts/acrom/Acrom-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Acrom';
+	src: url('../fonts/acrom/Acrom-Regular.eot');
+	src: local('Acrom Regular'), local('Acrom-Regular'),
+		url('../fonts/acrom/Acrom-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/acrom/Acrom-Regular.woff') format('woff'),
+		url('../fonts/acrom/Acrom-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: 'Acrom';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+.container {
+  min-width: var(--mobile);
+  max-width: var(--tablet);
+  width: 100%;
+  padding: 10px;
+}
+
+.container-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: var(--c-dark);
+  min-height: 4rem;
+}
+/* =============== nav ======================== */
+
+.header-menu {
+  width: 100%;
+  background: var(--c-dark);
+}
+
+.header-menu .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+/* =============== #nav-menu ================== */
+.nav-menu {
+  width: 100%;
+  min-height: 585px;
+  text-align: center;
+  font-family: var(--font-main);
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+}
+.nav-menu__item {
+  margin-bottom: 35px;
+}
+.nav-menu__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-grey);
+}
+
+
+/* ============= #end #nav-menu ================ */
+/* ============= #burger-button ================ */
+.burger-btn {
+  --s: 30px;
+  width: var(--s);
+  height: var(--s);
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--c-accent);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.burger-btn__line {
+  --s: 2px;
+  height: var(--s);
+  width: 10px;
+  position: relative;
+  left: 0;
+  margin-bottom:  var(--s);
+  transition: all .4s ease-in-out;
+  background-color: var(--c-light);
+}
+.burger-btn__bottom {
+  margin-bottom: 0;
+}
+.burger-btn__top--click,
+.burger-btn__center--click,
+.burger-btn__bottom--click {
+  transform-origin: center;
+  transition: all .4s ease-in-out;
+}
+.burger-btn__top--click {
+  transform: translatey(200%) rotate(45deg) scale(1.5);
+}
+.burger-btn__bottom--click {
+  transform: translatey(-200%) rotate(-45deg) scale(1.5);
+}
+.burger-btn__center--click {
+  transform: rotatey(90deg) scale(1.5);
+}
+
+/* =========== #end #burger-button ============= */
+
+/* =========== Front page =========== */
+
+.front-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========== About =========== */
+
+.about {
+  background: var(--c-dark);
+}
+
+.about-button {
+  display: block;
+  background: var(--c-accent);
+  padding: 20px 30px;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  margin: auto;
+}
+
+/* =========== Footer =========== */
+
+footer {
+  background: var(--c-light);
+}
