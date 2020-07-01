@@ -4,6 +4,9 @@
   --c-light: #fff;
   --c-accent: #FF6B08;
 
+  --c-dark-blue: #253045; 
+  --c-grey-blue: #4A5771;
+
   /* text */
   --txt-c-dark: var(--c-dark);
   --txt-c-grey: #4F5B70;
@@ -52,6 +55,15 @@
 	font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: 'Acrom';
 }
@@ -70,10 +82,10 @@ button {
   outline: none;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .container {
-  min-width: var(--mobile);
   max-width: var(--tablet);
   width: 100%;
   padding: 10px;
@@ -103,6 +115,14 @@ header {
   padding: 20px 10px;
 }
 
+.hire-me {
+  text-transform: uppercase;
+  color: var(--txt-c-accent);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+}
+
 /* =============== #nav-menu ================== */
 .nav-menu {
   width: 100%;
@@ -126,7 +146,35 @@ header {
 }
 
 
-/* ============= #end #nav-menu ================ */
+/* ============= front-page ================ */
+
+.front-page .my-name {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: var(--txt-c-accent);
+  margin: 15px auto 10px auto;
+}
+
+.front-page .profession {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  text-align: center;
+  margin: 0 10px 20px 10px;
+}
+
+.front-page .profession-description {
+  color: var(--txt-c-light);
+  text-align: center;
+  margin: 20px auto 30px auto;
+  line-height: 150%;
+}
+
 /* ============= #burger-button ================ */
 .burger-btn {
   --s: 30px;
@@ -191,7 +239,187 @@ header {
   padding: 20px 30px;
   text-transform: uppercase;
   color: var(--txt-c-light);
+  margin: 0 auto 30px auto;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-photo {
+  width: 40%;
+  min-width: 110px;
   margin: auto;
+}
+
+.about-me-text {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 18px auto;
+  color: var(--txt-c-light);
+  text-transform: uppercase;
+}
+
+.play-button {
+  border: 2px solid var(--c-accent);
+  color: var(--txt-c-accent);
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.play-button-icon {
+  height: 10px;
+  margin-right: 7px;
+}
+
+.play-button-text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* =========== Coding experience =========== */
+
+.coding-experience {
+  margin: 40px auto;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 29%;
+}
+
+.coding-experience-title {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  text-align: center;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.coding-experience-image {
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+
+.coding-level-container {
+  display: flex;
+  color: var(--txt-c-light);
+  margin-bottom: 20px;
+}
+
+.coding-level {
+  margin-right: 15px;
+}
+
+.coding-level .coding-level-light {
+  width: 7px;
+  color: var(--c-light);
+}
+.coding-level .coding-level-accent {
+  width: 7px;
+  color: var(--c-accent);
+}
+
+.coding-level-text {
+  font-size: 16px;
+}
+
+/* =========== My description =========== */
+
+.my-description {
+  background: var(--c-light);
+}
+
+.my-description-title-primary {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.my-description-title-secondary {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  color: var(--txt-c-light);
+}
+
+.my-description-title-secondary span {
+  background: var( --c-dark);
+}
+
+.web-apps-container {
+  position: relative;
+}
+
+.web-apps-container-laptop {
+  position: absolute;
+  left: -60px;
+  top: 70px;
+  width: 235px;
+}
+
+.web-apps-container-text {
+  height: 390px;
+}
+
+.my-description-text {
+  font-size: 17px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+/* =========== Projects =========== */
+
+.projects {
+  background: var( --c-dark);
+  padding: 0 10px;
+}
+
+.projects-title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+}
+
+.project-item {
+  background-color: var(--c-dark-blue);
+  border-radius: 5px;
+  padding: 18px 0 0 0;
+}
+
+.project-image {    
+  width: 100%;
+}
+
+.project-dots {
+  margin: 0 0 18px 18px;
+}
+
+.project-dots .project-dot-accent {
+  color: var(--c-accent);
+  width: 7px;
+}
+
+.project-dots .project-dot {
+  color: var(--c-grey-blue);
+  width: 7px;
 }
 
 /* =========== Footer =========== */

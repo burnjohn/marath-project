@@ -16,59 +16,164 @@
     <header>
       <nav class="header-menu">
         <div class="container">
-          <img src="img/goit-logo.svg" alt="logo" />
-          <button class="burger-btn"></button>
+          <button>
+            <img src="img/goit-logo.svg" alt="logo" />
+          </button>
+
+          <div>
+            <button class="hire-me">— hire me</button>
+            <button class="burger-btn"></button>
+          </div>
         </div>
       </nav>
     </header>
 
     <section class="about">
-      <div class="container container-center">
-        <div class="front-page">
-          <h1>[Alex Tur]</h1>
-          <h2>{Frontend} _DEVELOPER</h2>
-          <p>
+      <div class="front-page">
+        <div class="container container-center">
+          <h1 class="my-name">[Alex Tur]</h1>
+          <h2 class="profession">{Frontend} _DEVELOPER</h2>
+          <p class="profession-description">
             / Using HTML, CSS, JavaScript, React Native and Node.js I help to
             build websites, small and medium web apps for business
           </p>
-          <button class="about-button">See my recent works</button>
+          <button class="about-button">See my recent works —</button>
         </div>
-        <div class="about-me">
-          <img src="img/my-photo.jpg" alt="my-photo" />
-          <p>Abount me in 2 minues</p>
-          <button>play</button>
+      </div>
+
+      <div class="about-me">
+        <div class="container container-center">
+          <img src="img/my-photo.jpg" alt="my-photo" class="about-me-photo" />
+          <p class="about-me-text">About me in 2 minutes</p>
+          <button class="play-button">
+            <i class="fas fa-play play-button-icon"></i>
+            <span class="play-button-text">play</span>
+          </button>
         </div>
-        <div class="coding-experience">
-          <img src="img/laptop.svg" alt="" />
-          <h3>my coding skills & experience</h3>
+      </div>
+
+      <div class="coding-experience">
+        <div class="container">
+          <div class="coding-experience-image">
+            <img
+              src="img/laptop.svg"
+              alt="laptop"
+              class="coding-experience-image"
+            />
+          </div>
+          <h3 class="coding-experience-title">
+            my coding skills<br />
+            & experience
+          </h3>
           <div class="experience-container">
-            <ul>
-              <li>Html</li>
-              <li>Css</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>React Native</li>
-            </ul>
+            <div class="coding-level-container">
+              <div class="coding-level">
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+              </div>
+              <span class="coding-level-text">Html</span>
+            </div>
+            <div class="coding-level-container">
+              <div class="coding-level">
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+              </div>
+              <span class="coding-level-text">Css</span>
+            </div>
+            <div class="coding-level-container">
+              <div class="coding-level">
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-light"></i>
+              </div>
+              <span class="coding-level-text">JavaScript</span>
+            </div>
+            <div class="coding-level-container">
+              <div class="coding-level">
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-light"></i>
+                <i class="far fa-circle coding-level-light"></i>
+              </div>
+              <span class="coding-level-text">React</span>
+            </div>
+            <div class="coding-level-container">
+              <div class="coding-level">
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-light"></i>
+                <i class="far fa-circle coding-level-light"></i>
+                <i class="far fa-circle coding-level-light"></i>
+              </div>
+              <span class="coding-level-text">Node</span>
+            </div>
+            <div class="coding-level-container">
+              <div class="coding-level">
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-accent"></i>
+                <i class="far fa-circle coding-level-light"></i>
+                <i class="far fa-circle coding-level-light"></i>
+                <i class="far fa-circle coding-level-light"></i>
+              </div>
+              <span class="coding-level-text">React Native</span>
+            </div>
           </div>
         </div>
-        <div class="my-description">
-          <h3>I code things from scratch_</h3>
-          <p>[and help to create great web apps]</p>
-          <img src="img/my-photo.jpg" alt="" />
-          <p>
+      </div>
+      <div class="my-description">
+        <div class="container container-center">
+          <h3 class="my-description-title-primary">
+            I code<br />
+            things from<br />
+            scratch_
+          </h3>
+          <p class="my-description-title-secondary">
+            <span>[and help to</span> <br /> <span>create great web</span> <br />
+            <span>apps]</span>
+          </p>
+          <div class="web-apps-container">
+            <img class="web-apps-container-laptop" src="img/web-apps-laptop.png" alt="web-apps-laptop">
+            <img class="web-apps-container-text" src="img/web.png" alt="web">
+          </div>
+          <p class="my-description-text">
             / I will help you to create a high-performance Landing Page,
             functional corporate website for your business, interactive web app
             for SaaS, startup, or other services.
           </p>
-          <p>
+          <p class="my-description-text">
             / My specialization is front-end development — client side of the
             web. But I also have full-stack developer experience.
           </p>
         </div>
       </div>
     </section>
-    <section class="project"></section>
+    <section class="projects">
+      <div class="container container-center">
+        <h3 class="projects-title">
+          My personal _projects
+        </h3>
+
+        <div class="projects-gallery">
+          <div class="project-item">
+            <div class="project-dots">
+              <i class="fas fa-circle project-dot-accent"></i>
+              <i class="fas fa-circle project-dot"></i>
+              <i class="fas fa-circle project-dot"></i>
+            </div>
+            <img src="img/projects/project-1.jpg" alt="project 1" class="project-image">
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="calculate-project"></section>
     <footer>
       <p><b>Alex Tur</b></p>
@@ -86,6 +191,10 @@
       </ul>
     </section> -->
 
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    ></script>
     <script type="module" src="js/app.js"></script>
   </body>
 </html>
