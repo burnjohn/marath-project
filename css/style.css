@@ -398,7 +398,12 @@ header {
   color: var(--txt-c-light);
 }
 
-.project-item {
+.projects-gallery {
+  margin-bottom: 30px;
+}
+
+
+.project-item-bgd {
   background-color: var(--c-dark-blue);
   border-radius: 5px;
   padding: 18px 0 0 0;
@@ -420,6 +425,49 @@ header {
 .project-dots .project-dot {
   color: var(--c-grey-blue);
   width: 7px;
+}
+
+.project-item-technology {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.project-item-technology-icon {
+  margin-right: 7px;
+  color: var(--c-accent);
+}
+
+.project-item {
+  font-size: 17px;
+  color: var(--txt-c-light);
+  margin-bottom: 23px;
+}
+
+.project-gallery-more-details {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 15px 18px;
+  background: var(--c-accent);
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  white-space: nowrap;
+}
+
+.project-gallery-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.project-gallery-hire-me {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--txt-c-accent);
+  margin-left: 22px;
+  white-space: nowrap;
 }
 
 /* =========== Footer =========== */
