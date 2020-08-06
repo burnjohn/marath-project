@@ -384,19 +384,15 @@ header {
   display: none;
 }
 
-.web-apps-container {
-  position: relative;
-  align-self: center;
-}
-
 .web-apps-image {
   position: absolute;
-  left: -40px;
+  left: -35px;
   top: 50px;
   width: 235px;
 }
 
 .web-apps-image-text {
+  position: relative;
   font-weight: bold;
   font-size: 150px;
   line-height: 180px;
@@ -863,7 +859,7 @@ header {
   }
 
   .my-description {
-    padding-bottom: 130px;
+    padding-bottom: 180px;
   }
 
   .my-description-title-primary {
@@ -892,21 +888,17 @@ header {
     margin-bottom: 40px;
   }
 
-  .web-apps-container {
-    position: absolute;
-    right: 80px;
-    bottom: -65px;
-    z-index: 0;
-  }
-
   .web-apps-image-text {
+    position: absolute;
     font-size: 200px;
     line-height: 240px;
+    right: 20px;
+    top: 230px;
   }
 
   .web-apps-image {
     width: 360px;
-    left: -115px;
+    left: -105px;
     top: 60px;
   }
 
@@ -1194,12 +1186,6 @@ header {
     position: relative;
   }
 
-  .web-apps-container {
-    position: absolute;
-    top: 50px;
-    z-index: 0;
-  }
-
   .completed-projects-bar-container {
     display: block;
   }
@@ -1237,6 +1223,27 @@ header {
 
   .about-me .my-photo {
     display: none;
+  }
+
+  .web-apps-image-text {
+    right: 120px;
+    top: 20px;
+    font-size: 250px;
+    line-height: 300px;
+  }
+
+  .web-apps-image {
+    width: 420px;
+    left: -45px;
+    top: 70px;
+  }
+
+  .completed-projects-text {
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 135%;
   }
 
   .project-item {
