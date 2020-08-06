@@ -6,11 +6,13 @@
 
   --c-dark-blue: #253045; 
   --c-grey-blue: #4A5771;
+  --c-grey-light: #F1F2F2;
   --c-grey: #BCC1D2;
 
   /* text */
   --txt-c-dark: var(--c-dark);
   --txt-c-grey: #4F5B70;
+  --txt-c-grey-light: var(--c-grey-light);
   --txt-c-accent: var(--c-accent);
   --txt-c-light: var(--c-light);
 
@@ -90,7 +92,7 @@ button {
 
 .container {
   min-width: var(--mobile);
-  max-width: var(--tablet);
+  max-width: 100%;
   width: 100%;
   padding: 10px;
   margin: auto;
@@ -133,6 +135,17 @@ header {
   line-height: 18px;
   margin-right: 20px;
   padding: 0;
+}
+
+
+.burger-btn {
+  background: var(--c-accent);
+  color: var(--c-light);
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  padding: 8px;
 }
 
 /* =============== #nav-menu ================== */
@@ -187,52 +200,6 @@ header {
   line-height: 150%;
   font-size: 17px;
 }
-
-/* ============= #burger-button ================ */
-.burger-btn {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: var(--c-accent);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--txt-c-light);
-}
-.burger-btn__line {
-  height: 30px;
-  width: 10px;
-  position: relative;
-  left: 0;
-  margin-bottom: 30px;
-  transition: all .4s ease-in-out;
-  background-color: var(--c-light);
-}
-.burger-btn__bottom {
-  margin-bottom: 0;
-}
-.burger-btn__top--click,
-.burger-btn__center--click,
-.burger-btn__bottom--click {
-  transform-origin: center;
-  transition: all .4s ease-in-out;
-}
-.burger-btn__top--click {
-  transform: translatey(200%) rotate(45deg) scale(1.5);
-}
-.burger-btn__bottom--click {
-  transform: translatey(-200%) rotate(-45deg) scale(1.5);
-}
-.burger-btn__center--click {
-  transform: rotatey(90deg) scale(1.5);
-}
-
-/* =========== Front page =========== */
 
 .front-page {
   display: flex;
@@ -384,6 +351,8 @@ header {
 
 .my-description-content-container {
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-description-title-primary {
@@ -393,6 +362,7 @@ header {
   line-height: 42px;
   text-transform: uppercase;
   align-self: flex-start;
+  margin-bottom: 20px;
 }
 
 .my-description-title-secondary {
@@ -402,6 +372,7 @@ header {
   text-transform: uppercase;
   align-self: flex-start;
   color: var(--txt-c-light);
+  margin: 0;
 }
 
 .my-description-title-secondary span {
@@ -415,17 +386,28 @@ header {
 
 .web-apps-container {
   position: relative;
+  align-self: center;
 }
 
 .web-apps-image {
   position: absolute;
-  left: -60px;
-  top: 70px;
+  left: -40px;
+  top: 50px;
   width: 235px;
 }
 
 .web-apps-image-text {
-  height: 390px;
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 180px;
+  text-transform: uppercase;
+  color: var(--txt-c-grey-light);
+  writing-mode: tb-rl;
+  margin: auto;
+}
+
+.completed-projects-bar-container {
+  display: none;
 }
 
 .my-description-text {
@@ -438,7 +420,7 @@ header {
 
 .personal-projects {
   background: var( --c-dark);
-  padding: 0 10px;
+  padding: 0;
 }
 
 .project-details-button {
@@ -508,8 +490,9 @@ header {
 .project-item {
   font-size: 17px;
   color: var(--txt-c-light);
-  margin-bottom: 23px;
+  margin: 0 auto 23px auto;
   border-bottom: 1px solid var(--c-grey-blue);
+  width: calc(100% - 40px);
 }
 
 /* =========== Teamwork projects =========== */
@@ -659,6 +642,10 @@ header {
 
 .calculate-project-title-desktop {
   display: none;
+}
+
+.calculate-project-text-container {
+  width: 600px;
 }
 
 .calculate-project-desc {
@@ -874,7 +861,6 @@ header {
 
   .my-description-title-primary {
     width: 95%;
-    margin-bottom: 0;
     font-size: 50px;
     line-height: 60px;
   }
@@ -896,22 +882,24 @@ header {
   
   .my-description-title-secondary-desktop {
     display: block;
+    margin-bottom: 40px;
   }
 
   .web-apps-container {
     position: absolute;
     right: 80px;
-    bottom: -95px;
+    bottom: -65px;
     z-index: 0;
   }
 
   .web-apps-image-text {
-    height: 470px;
+    font-size: 200px;
+    line-height: 240px;
   }
 
   .web-apps-image {
     width: 360px;
-    left: -165px;
+    left: -115px;
     top: 60px;
   }
 
@@ -1009,6 +997,7 @@ header {
   .calculate-project-explanation {
     text-align: left;
     width: 330px;
+    z-index: 1;
   }
 
   .calculate-project-img {
@@ -1042,7 +1031,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 920px) {
   .container {
     min-width: var(--desktop);
     max-width: var(--desktop-lg);
@@ -1114,6 +1103,10 @@ header {
     display: none;
   }
 
+  .play-button {
+    padding: 12px 25px;
+  }
+
   .laptop-image-mobile {
     display: none;
   }
@@ -1124,8 +1117,8 @@ header {
 
   .laptop-image {
     position: absolute;
-    top: 150px;
-    right: -40px;
+    top: 140px;
+    right: 0;
     z-index: 0;
   }
 
@@ -1177,17 +1170,45 @@ header {
 
   .my-description .container {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .my-description-text {
     width: 400px;
   }
 
-  .web-apps-container {
+  .my-description-content-container {
     position: relative;
-    right: 230px;
-    bottom: -55px;
+  }
+
+  .web-apps-container {
+    position: absolute;
+    top: 50px;
     z-index: 0;
+  }
+
+  .completed-projects-bar-container {
+    display: block;
+  }
+
+  .completed-projects-bar {
+    width: 160px;
+    height: 465px;
+    background: var(--c-accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+
+  .completed-projects-count {
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 78px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin: 0;
   }
 
   .my-description-title-primary {
@@ -1249,6 +1270,46 @@ header {
 
   .feedback-form-input:last-child {
     margin-right: 0;
+  }
+
+  .calculate-project {
+    padding: 140px 0;
+  }
+
+  .calculate-project .container {
+    flex-direction: row;
+  }
+
+  .calculate-project-text-container {
+    width: auto;
+    align-self: flex-start;
+    width: calc(100% - 386px - 40px);
+    margin-right: 40px;
+  }
+
+  .cost-form {
+    padding: 40px 50px;
+    width: 386px;
+    margin-bottom: 0;
+  }
+
+  .calculate-project-explanation {
+    max-width: 380px;
+    width: auto;
+  }
+
+  .footer-contacts .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .footer-contacts-row {
+    width: calc(50% + 190px /2);
+  }
+
+  .social-links {
+    align-self: center;
   }
 
 }
