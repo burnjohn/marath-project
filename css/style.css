@@ -645,7 +645,7 @@ header {
 }
 
 .calculate-project-text-container {
-  width: 600px;
+  width: 100%;
 }
 
 .calculate-project-desc {
@@ -655,11 +655,18 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: var(--txt-c-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .calculate-project-desc span {
   background: var(--c-accent);
-  padding: 4px 0;
+  padding: 4px;
+}
+
+.calculate-project-desc .calculate-project-desc-accent {
+  padding: 4px 10px;
 }
 
 .calculate-project-img {
@@ -960,6 +967,8 @@ header {
 
   .calculate-project-desc {
     align-self: flex-start;   
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .cost-form {
@@ -969,6 +978,10 @@ header {
   .calculate-project-title {
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .calculate-project-text-container {
+    width: 600px;
   }
 
   .calculate-project-title-mobile {
@@ -1246,7 +1259,6 @@ header {
   }
 
   .feedback-form .container {
-    /* max-width: var(--desktop-lg); */
     background: var(--c-dark);
     margin: auto;
   }
