@@ -13,22 +13,24 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="top">
       <nav class="header-menu">
         <div class="container">
           <button>
-            <img src="img/goit-logo.svg" alt="logo" />
+            <a href="#top">
+              <img src="img/goit-logo.svg" alt="logo" />
+            </a>
           </button>
 
           <div class="menu-navigation">
-            <a href="" class="menu-navigation-item">about</a>
-            <a href="" class="menu-navigation-item">projects</a>
-            <a href="" class="menu-navigation-item">cost calculator</a>
-            <a href="" class="menu-navigation-item">contacts</a>
+            <a href="#about" class="menu-navigation-item color-to-accent-animation">about</a>
+            <a href="#personal-projects" class="menu-navigation-item color-to-accent-animation">projects</a>
+            <a href="#calculate-project" class="menu-navigation-item color-to-accent-animation">cost calculator</a>
+            <a href="#footer-contacts" class="menu-navigation-item color-to-accent-animation">contacts</a>
           </div>
 
           <div class="header-menu-burger-button">
-            <button class="hire-me-button">— hire me</button>
+            <button class="hire-me-button color-to-light-animation">— hire me</button>
             <button class="burger-btn">
               <i class="fas fa-bars"></i>
             </button>
@@ -50,9 +52,9 @@
             / Using HTML, CSS, JavaScript, React Native and Node.js I help to
             build websites, small and medium web apps for business
           </p>
-          <button class="accent-button about-button">
+          <a class="accent-button about-button btn-to-light-animation" href="#personal-projects">
             See my recent works —
-          </button>
+          </a>
         </div>
 
         <div class="about-me">
@@ -66,7 +68,7 @@
               About me<br />in 2 minutes
             </p>
 
-            <button class="play-button">
+            <button class="play-button btn-to-accent-animation">
               <i class="fas fa-play play-button-icon"></i>
               <span class="play-button-text">play</span>
             </button>
@@ -159,7 +161,7 @@
       </div>
     </section>
 
-      <section class="my-description">
+      <section class="my-description" id="about">
         <div class="container container-center">
           <div class="my-description-content-container">
             <h3 class="my-description-title-primary">
@@ -208,7 +210,7 @@
         </div>
     </section>
 
-    <section class="personal-projects">
+    <section class="personal-projects" id="personal-projects">
       <div class="container container-center">
         <h3 class="personal-projects-title">
           My personal<br />
@@ -235,7 +237,7 @@
                 Technology: HTML5, CSS
               </p>
             </div>
-            <button class="accent-button project-details-button">
+            <button class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -247,8 +249,8 @@
                 <i class="fas fa-circle project-dot"></i>
               </div>
               <img
-                src="img/projects/personal/project-2.jpg"
-                alt="project 2"
+                src="img/projects/personal/wedding.jpg"
+                alt="wedding project"
                 class="project-image"
               />
             </div>
@@ -258,7 +260,7 @@
                 Technology: HTML, CSS, JavaScript, PHP
               </p>
             </div>
-            <button class="accent-button project-details-button">
+            <button class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -281,7 +283,7 @@
                 Technology: React.js, Node.js
               </p>
             </div>
-            <button class="accent-button project-details-button">
+            <button class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -304,7 +306,7 @@
                 Technology: HTML, CSS, JavaScript, Wordpress
               </p>
             </div>
-            <button class="accent-button project-details-button">
+            <button class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -331,8 +333,8 @@
                 <i class="fas fa-circle project-dot"></i>
               </div>
               <img
-                src="img/projects/team/project-1.jpg"
-                alt="project 1"
+                src="img/projects/team/questify.jpg"
+                alt="questify project"
                 class="project-image"
               />
             </div>
@@ -342,7 +344,7 @@
                 Technology: HTML5, CSS3, JS
               </p>
             </div>
-            <button class="accent-button project-details-button">
+            <button class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -355,8 +357,8 @@
                 <i class="fas fa-circle project-dot"></i>
               </div>
               <img
-                src="img/projects/team/project-2.jpg"
-                alt="project 2"
+                src="img/projects/team/it-test.jpg"
+                alt="it-test project"
                 class="project-image"
               />
             </div>
@@ -366,55 +368,7 @@
                 Technology: HTML5, CSS3, JS
               </p>
             </div>
-            <button class="accent-button project-details-button">
-              More details —
-            </button>
-          </div>
-
-          <div class="project-item">
-            <div class="project-item-bgd">
-              <div class="project-dots">
-                <i class="fas fa-circle project-dot-accent"></i>
-                <i class="fas fa-circle project-dot"></i>
-                <i class="fas fa-circle project-dot"></i>
-              </div>
-              <img
-                src="img/projects/team/project-3.jpg"
-                alt="project 3"
-                class="project-image"
-              />
-            </div>
-            <div class="project-item-technology">
-              <i class="fas fa-file-code project-item-technology-icon"></i>
-              <p class="team-project-item-technology-text">
-                Technology: HTML5, CSS3, JS
-              </p>
-            </div>
-            <button class="accent-button project-details-button">
-              More details —
-            </button>
-          </div>
-
-          <div class="project-item">
-            <div class="project-item-bgd">
-              <div class="project-dots">
-                <i class="fas fa-circle project-dot-accent"></i>
-                <i class="fas fa-circle project-dot"></i>
-                <i class="fas fa-circle project-dot"></i>
-              </div>
-              <img
-                src="img/projects/team/project-4.jpg"
-                alt="project 4"
-                class="project-image"
-              />
-            </div>
-            <div class="project-item-technology">
-              <i class="fas fa-file-code project-item-technology-icon"></i>
-              <p class="team-project-item-technology-text">
-                Technology: HTML5, CSS3, JS
-              </p>
-            </div>
-            <button class="accent-button project-details-button">
+            <button class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -450,14 +404,14 @@
             />
           </div>
 
-          <button class="feedback-form-submit-btn">
+          <button class="feedback-form-submit-btn accent-button btn-to-light-animation">
             Discuss the project —
           </button>
         </form>
       </div>
     </section>
 
-    <section class="calculate-project">
+    <section class="calculate-project" id="calculate-project">
       <div class="container container-center">
         <div class="calculate-project-text-container">
         <h3 class="calculate-project-title calculate-project-title-mobile">
@@ -569,12 +523,12 @@
             <p class="cost-form-total-sum">350$</p>
           </div>
 
-          <button class="const-form-submit-btn">Find out the cost —</button>
+          <button class="const-form-submit-btn accent-button btn-to-light-animation">Find out the cost —</button>
         </div>
       </div>
     </section>
 
-    <footer class="footer-contacts">
+    <footer class="footer-contacts" id="footer-contacts">
       <div class="container container-center">
         <div class="footer-contacts-row">
           <div class="footer-contacts-column">
@@ -582,10 +536,10 @@
             <p class="footer-contacts-profession">Frontend Developer</p>
           </div>
           <div class="footer-contacts-column">
-            <a class="footer-contacts-number" href="tel:380505050505"
+            <a class="footer-contacts-number link-animation" href="tel:380505050505"
               >+38 (050) 505 05 05</a
             >
-            <a class="footer-contacts-mail" href="mailto:alexturdev@gmail.com"
+            <a class="footer-contacts-mail link-animation" href="mailto:alexturdev@gmail.com"
               >alexturdev@gmail.com</a
             >
           </div>
