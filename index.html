@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
-      crossorigin="anonymous"
-    />
     <title>My-resume</title>
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -442,25 +439,34 @@
         </div>
       </div>
 
-        <div class="cost-form">
+        <form class="cost-form calculator-form">
           <h4 class="cost-form-title">What should be done:</h4>
 
-          <div class="cost-form-select-container">
-            <select name="" id="" class="cost-form-select">
-              <option value="landing-page" default>Landing page</option>
-              <option value="web-site">Web site</option>
-              <option value="CMS">Content management system</option>
+          <div class="cost-form-select-container tech-input">
+            <select name="" id="calculator-form-website-type" class="cost-form-select">
+              <option value="landing-page:1000" >Landing page</option>
+              <option value="web-site:2000" selected>Web site</option>
+              <option value="CMS:3000">Content management system</option>
             </select>
           </div>
 
-          <div class="cost-form-tags-input-container">
+          <div class="cost-form-tags-input-container calculator-form-input">
             <h4 class="cost-form-title">Choose preferred technologies</h4>
-            <div class="cost-form-tags-input"></div>
+
+            <select name="" id="calculator-form-technologies" class="cost-form-tags-input " multiple>
+              <option value="html:100" selected>HTML</option>
+              <option value="css:200" selected>CSS</option>
+              <option value="react:300">React</option>
+              <option value="angular:400">Angular</option>
+              <option value="node-js:500">Node js</option>
+              <option value="bootstrap:600">Bootstrap</option>
+              <option value="material-design:700">Material Design</option>
+            </select>
           </div>
 
           <div class="cost-form-question-1">
             <h4 class="cost-form-title">Personal account and shopping cart:</h4>
-            <div>
+            <div id="calculator-form-shopping-cart">
               <input
                 type="radio"
                 checked
@@ -490,11 +496,11 @@
 
           <div class="cost-form-question-2">
             <h4 class="cost-form-title">Requests reception on your email:</h4>
-            <div>
+            <div id="calculator-form-email">
               <input
                 type="radio"
                 checked
-                name="contact"
+                name="reception"
                 value="phone"
                 id="reception-option-yes"
               />
@@ -506,7 +512,7 @@
 
               <input
                 type="radio"
-                name="contact"
+                name="reception"
                 value="mail"
                 id="reception-option-no"
               />
@@ -520,11 +526,11 @@
 
           <div class="cost-form-total-container">
             <h4 class="cost-form-total-title">Cost:</h4>
-            <p class="cost-form-total-sum">350$</p>
+            <p class="calculator-form-total-cost">350$</p>
           </div>
 
-          <button class="const-form-submit-btn accent-button btn-to-light-animation">Find out the cost —</button>
-        </div>
+          <input type="submit" class="const-form-submit-btn accent-button btn-to-light-animation" value="Find out the cost" />
+        </form>
       </div>
     </section>
 
@@ -553,10 +559,7 @@
       </div>
     </footer>
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-    ></script>
-    <script type="module" src="js/app.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/calculator.js"></script>
   </body>
 </html>

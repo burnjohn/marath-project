@@ -316,6 +316,7 @@ header {
 .play-button-icon {
   height: 10px;
   margin-right: 7px;
+  font-size: 9px;
 }
 
 .play-button-text {
@@ -363,16 +364,20 @@ header {
 }
 
 .coding-level {
-  margin-right: 15px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.coding-level .coding-level-light {
-  width: 7px;
+.coding-level-light {
   color: var(--c-light);
+  font-size: 8px;
+  margin-right: 5px;
 }
-.coding-level .coding-level-accent {
-  width: 7px;
+.coding-level-accent {
   color: var(--c-accent);
+  font-size: 8px;
+  margin-right: 5px;
 }
 
 .coding-level-text {
@@ -487,18 +492,16 @@ header {
   display: flex;
 }
 
-.project-dots .project-dot-accent {
+.project-dot-accent {
   color: var(--c-accent);
-  width: 7px;
-  height: 7px;
+  font-size: 8px;
   display: block;
   margin-right: 7px;
 }
 
-.project-dots .project-dot {
+.project-dot {
   color: var(--c-grey-blue);
-  width: 7px;
-  height: 7px;
+  font-size: 8px;
   display: block;
   margin-right: 7px;
 }
@@ -775,6 +778,8 @@ header {
   white-space: nowrap;
   margin: 0;
   width: 100%;
+  border: 0;
+  outline: none;
 }
 
 /* =========== Footer =========== */
@@ -1363,4 +1368,49 @@ header {
     align-self: center;
   }
 
+}
+
+
+/* MULTI SELECT */
+
+.calculator-form-input .tech-input-container .choices__item {
+  background: var(--c-accent);
+  border: none;
+  border-radius: 3px;
+  position: relative;
+}
+
+.calculator-form-input .tech-input-container:after {
+  content: "\f107";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  margin-top: -2.5px;
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.calculator-form-input .tech-input-container  {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--c-grey);
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  min-height: 35px;
+  box-sizing: border-box;
+}
+
+.calculator-form-input .choices__input {
+  display: none;
+}
+
+.calculator-form-input .choices__item .choices__button {
+  border-left: none;
+  margin: 0;
+  padding-left: 8px;
 }
