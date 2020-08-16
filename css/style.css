@@ -9,6 +9,10 @@
   --c-grey-light: #F1F2F2;
   --c-grey: #BCC1D2;
 
+  /* modal background */
+
+  --c-modal-dark: rgb(20 29 45 / 0.9);
+
   /* text */
   --txt-c-dark: var(--c-dark);
   --txt-c-grey: #4F5B70;
@@ -1166,7 +1170,7 @@ header {
   .menu-navigation {
     display: flex;
     align-items: center;
-    margin-left: 80px;
+    margin-left: 5%;
   }
 
   .menu-navigation-item {
@@ -1413,4 +1417,46 @@ header {
   border-left: none;
   margin: 0;
   padding-left: 8px;
+}
+
+/* MODALS */
+
+.modal {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--c-modal-dark);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 18px;
+  color: var(--c-grey-blue);
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-container {
+  position: relative;
+  width: 70%;
+  min-height: 400px;
+  background: var(--c-light);
+}
+
+.body-scroll-disable {
+  overflow: hidden;
 }

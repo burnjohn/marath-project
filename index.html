@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My-resume</title>
+    <style>
+      .modal {
+        display: none;
+      }
+    </style>
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/choices.min.css">
@@ -234,7 +239,7 @@
                 Technology: HTML5, CSS
               </p>
             </div>
-            <button class="accent-button project-details-button btn-to-light-animation">
+            <button id="personal-project-full-stack-btn" class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -257,7 +262,7 @@
                 Technology: HTML, CSS, JavaScript, PHP
               </p>
             </div>
-            <button class="accent-button project-details-button btn-to-light-animation">
+            <button id="personal-project-wedding-project-btn" class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -280,7 +285,7 @@
                 Technology: React.js, Node.js
               </p>
             </div>
-            <button class="accent-button project-details-button btn-to-light-animation">
+            <button id="personal-project-pro-test-btn" class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -303,7 +308,7 @@
                 Technology: HTML, CSS, JavaScript, Wordpress
               </p>
             </div>
-            <button class="accent-button project-details-button btn-to-light-animation">
+            <button id="personal-project-goit-btn" class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -341,7 +346,7 @@
                 Technology: HTML5, CSS3, JS
               </p>
             </div>
-            <button class="accent-button project-details-button btn-to-light-animation">
+            <button id="team-project-questify-btn" class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -365,7 +370,7 @@
                 Technology: HTML5, CSS3, JS
               </p>
             </div>
-            <button class="accent-button project-details-button btn-to-light-animation">
+            <button id="team-project-it-test-btn" class="accent-button project-details-button btn-to-light-animation">
               More details —
             </button>
           </div>
@@ -559,7 +564,58 @@
       </div>
     </footer>
 
+
+    <!-- MODALS -->
+
+    <div class="modals-wrapper">
+
+      <div class="modal" id="personal-project-full-stack">
+        <div class="modal-container">
+          <i class="fas fa-times modal-close-btn"></i>
+          full-stack
+        </div>
+      </div>
+
+      <div class="modal" id="personal-project-wedding-project">
+        <div class="modal-container">
+          <i class="fas fa-times modal-close-btn"></i>
+          wedding-project
+        </div>
+      </div>
+
+      <div class="modal" id="personal-project-pro-test">
+        <div class="modal-container">
+          <i class="fas fa-times modal-close-btn"></i>
+          pro-test
+        </div>
+      </div>
+
+      <div class="modal" id="personal-project-goit">
+        <div class="modal-container">
+          <i class="fas fa-times modal-close-btn"></i>
+          project-goit
+        </div>
+      </div>
+
+      <div class="modal" id="team-project-questify">
+        <div class="modal-container">
+          <i class="fas fa-times modal-close-btn"></i>
+          questify
+        </div>
+      </div>
+
+      <div class="modal" id="team-project-it-test">
+        <div class="modal-container">
+          <i class="fas fa-times modal-close-btn"></i>
+          it-test
+        </div>
+      </div>
+
+    </div>
+
+
     <script src="js/choices.min.js"></script>
     <script src="js/calculator.js"></script>
+    <script src="js/modals.js"></script>
   </body>
 </html>
